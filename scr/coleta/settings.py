@@ -12,7 +12,7 @@ BOT_NAME = "coleta"
 SPIDER_MODULES = ["coleta.spiders"]
 NEWSPIDER_MODULE = "coleta.spiders"
 
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "coleta (+http://www.yourdomain.com)"
 
@@ -88,5 +88,6 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
+REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
